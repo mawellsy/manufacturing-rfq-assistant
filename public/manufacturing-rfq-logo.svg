@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 72" role="img" aria-labelledby="title desc">
+  <title id="title">Manufacturing RFQ Assistant</title>
+  <desc id="desc">Structured document and review workflow logo for Manufacturing RFQ Assistant.</desc>
+  <rect x="1" y="4" width="64" height="64" rx="16" fill="#111827"/>
+  <path d="M19 16h20l9 9v28a4 4 0 0 1-4 4H19a4 4 0 0 1-4-4V20a4 4 0 0 1 4-4Z" fill="#F8FAFC"/>
+  <path d="M39 16v10h9" fill="#CBD5E1"/>
+  <path d="M22 34h19M22 40h12" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="23" cy="51" r="3" fill="#22D3EE"/><circle cx="33" cy="51" r="3" fill="#22D3EE"/>
+  <path d="m43 48 3 3 6-7" fill="none" stroke="#0891B2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="82" y="34" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.5">Manufacturing RFQ</text>
+  <text x="82" y="56" fill="#94A3B8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="500">Assistant</text>
+</svg>
