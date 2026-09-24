@@ -6,9 +6,12 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const { content, use_demo } = body
+    if (typeof content !== 'string' || !content.trim()) {
+      return NextResponse.json({ success: false, error: 'Customer request text is required.' }, { status: 400 })
+    }
     
-    // Demo mode: return predefined result for the sample RFQ
-    if (use_demo || content.includes('Emily Chen')) {
+    // Demo mode is explicit: arbitrary pasted text must never receive the predefined sample result.
+    if (use_demo === true) {
       // Validate against schema
       const validated = RFQSchema.parse(DEMO_EXTRACTED_RFQ)
       return NextResponse.json({
@@ -23,9 +26,9 @@ export async function POST(request: NextRequest) {
     if (!apiKey) {
       return NextResponse.json({
         success: false,
-        error: 'Live extraction unavailable. OpenAI API key not configured. Using demo mode.',
-        demo_only: true,
-      }, { status: 400 })
+        demo: false,
+        error: 'Live AI extraction is unavailable because no AI provider is configured. Load the built-in sample RFQ to preview the workflow, or configure live extraction before processing customer text.',
+      }, { status: 503 })
     }
     
     // Call OpenAI API with structured output

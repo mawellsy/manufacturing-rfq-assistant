@@ -61,7 +61,7 @@ export type RFQ = z.infer<typeof RFQSchema>
 
 export const RFQFieldGroupSchema = z.object({
   status: z.enum(['complete', 'missing', 'partial']),
-  fields: z.record(z.union([z.string(), z.number(), z.null()]).nullable()),
+  fields: z.record(z.string(), z.union([z.string(), z.number(), z.null()]).nullable()),
 })
 
 export const RFQValidationResultSchema = z.object({
@@ -84,7 +84,7 @@ export type RFQFieldProvenance = z.infer<typeof RFQFieldProvenanceSchema>
 
 export const ReviewedRFQSchema = z.object({
   rfq: RFQSchema,
-  field_provenance: z.record(RFQFieldProvenanceSchema),
+  field_provenance: z.record(z.string(), RFQFieldProvenanceSchema),
   reviewer_notes: z.string().nullable(),
   marked_complete: z.boolean(),
 })

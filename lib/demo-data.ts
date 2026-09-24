@@ -9,25 +9,21 @@ We are looking for a quotation for 2,000 custom cable assemblies for an industri
 Requirements:
 - Cable length: 500 mm
 - Cable color: black
-- Connector family: Molex
+- Connector families: Molex Micro-Fit 3.0 and JST PH
 - RoHS compliant
 - Quantity: 2,000 pcs
-- Target delivery: November
+- Target delivery: December 15, 2026
 
-We have attached a drawing for reference.
+No drawing or other attachment is included with this request.
 
 Please let us know if you need any additional information.
 
 Best regards,
 Emily Chen
 ABC Industrial Ltd.
-emily@example-industrial.com`
+emily.chen@example.com`
 
-export const DEMO_ATTACHMENT = {
-  filename: 'cable_assembly_drawing.pdf',
-  type: 'pdf' as const,
-  present: true,
-}
+export const DEMO_ATTACHMENTS: RFQ['attachments'] = []
 
 export const DEMO_EXTRACTED_RFQ: RFQ = {
   rfq_id: 'RFQ-2024-001',
@@ -36,12 +32,12 @@ export const DEMO_EXTRACTED_RFQ: RFQ = {
   // Customer
   customer_company: 'ABC Industrial Ltd.',
   contact_name: 'Emily Chen',
-  contact_email: 'emily@example-industrial.com',
+  contact_email: 'emily.chen@example.com',
   subject: 'RFQ - Custom Cable Assembly',
   
   // Commercial
   quantity: 2000,
-  requested_delivery: 'November',
+  requested_delivery: 'December 15, 2026',
   annual_volume: null,
   target_price: null,
   
@@ -54,7 +50,7 @@ export const DEMO_EXTRACTED_RFQ: RFQ = {
   material: null,
   cable_length: '500 mm',
   cable_color: 'Black',
-  connector_family: 'Molex',
+  connector_family: 'Molex Micro-Fit 3.0 and JST PH',
   connector_part_number: null, // Not provided in customer email
   wire_gauge: null, // Not provided in customer email
   voltage_rating: null, // Not provided in customer email
@@ -73,11 +69,29 @@ export const DEMO_EXTRACTED_RFQ: RFQ = {
   packaging_requirements: null, // Not provided in customer email
   
   // Attachments
-  attachments: [DEMO_ATTACHMENT],
+  attachments: DEMO_ATTACHMENTS,
   
   // Notes
   other_requirements: null,
 }
+
+export const ADVISORY_FIELDS_FOR_CABLE_ASSEMBLY = [
+  'contact_email',
+  'subject',
+  'application',
+  'cable_color',
+  'connector_part_number',
+  'material',
+  'tolerance',
+  'finish_or_plating',
+  'certifications',
+  'reach',
+  'ul',
+  'other_standards',
+  'annual_volume',
+  'target_price',
+  'other_requirements',
+]
 
 export const REQUIRED_FIELDS_FOR_CABLE_ASSEMBLY = [
   'customer_company',
