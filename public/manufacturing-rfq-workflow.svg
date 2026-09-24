@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+  <title id="title">Manufacturing RFQ Assistant workflow</title>
+  <desc id="desc">A six-step human-in-the-loop workflow from an unstructured customer request to an engineering and sales handoff.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="review" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0e7490"/>
+      <stop offset="1" stop-color="#155e75"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020617" flood-opacity=".28"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#67e8f9"/>
+    </marker>
+    <style>
+      .eyebrow { font: 600 13px Inter, ui-sans-serif, system-ui, sans-serif; letter-spacing: 2.5px; text-transform: uppercase; fill: #67e8f9; }
+      .title { font: 700 30px Inter, ui-sans-serif, system-ui, sans-serif; fill: #f8fafc; }
+      .subtitle { font: 400 16px Inter, ui-sans-serif, system-ui, sans-serif; fill: #cbd5e1; }
+      .step { font: 700 16px Inter, ui-sans-serif, system-ui, sans-serif; fill: #f8fafc; }
+      .copy { font: 400 13px Inter, ui-sans-serif, system-ui, sans-serif; fill: #cbd5e1; }
+      .review-step { font: 700 16px Inter, ui-sans-serif, system-ui, sans-serif; fill: #ecfeff; }
+      .review-copy { font: 400 13px Inter, ui-sans-serif, system-ui, sans-serif; fill: #cffafe; }
+      .num { font: 700 12px Inter, ui-sans-serif, system-ui, sans-serif; fill: #67e8f9; }
+      .review-num { font: 700 12px Inter, ui-sans-serif, system-ui, sans-serif; fill: #a5f3fc; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="520" rx="28" fill="url(#bg)"/>
+  <path d="M0 116H1600" stroke="#334155" stroke-opacity=".55"/>
+  <text x="72" y="58" class="eyebrow">MANUFACTURING RFQ ASSISTANT</text>
+  <text x="72" y="98" class="title">Turn unstructured RFQs into review-ready requests.</text>
+  <text x="1528" y="61" text-anchor="end" class="subtitle">AI-assisted, deterministically validated, human approved</text>
+
+  <g fill="none" stroke="#67e8f9" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)" opacity=".9">
+    <path d="M264 286H292"/>
+    <path d="M518 286H546"/>
+    <path d="M772 286H800"/>
+    <path d="M1026 286H1054"/>
+    <path d="M1280 286H1308"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="48" y="178" width="216" height="216" rx="18" fill="#1e293b" stroke="#475569"/>
+    <rect x="302" y="178" width="216" height="216" rx="18" fill="#1e293b" stroke="#475569"/>
+    <rect x="556" y="178" width="216" height="216" rx="18" fill="#1e293b" stroke="#475569"/>
+    <rect x="810" y="178" width="216" height="216" rx="18" fill="#1e293b" stroke="#475569"/>
+    <rect x="1064" y="162" width="216" height="248" rx="18" fill="url(#review)" stroke="#67e8f9" stroke-width="2"/>
+    <rect x="1318" y="178" width="216" height="216" rx="18" fill="#1e293b" stroke="#475569"/>
+  </g>
+
+  <g transform="translate(72 204)">
+    <circle cx="22" cy="22" r="22" fill="#0e7490" fill-opacity=".28" stroke="#67e8f9"/>
+    <path d="M11 15h22v16H11z M15 11h14v4H15z M15 20h14M15 25h10" fill="none" stroke="#a5f3fc" stroke-width="2" stroke-linejoin="round"/>
+    <text x="0" y="62" class="num">01</text>
+    <text x="0" y="91" class="step">Customer Email /</text><text x="0" y="112" class="step">PDF / Drawing</text>
+    <text x="0" y="145" class="copy">Unstructured customer</text><text x="0" y="163" class="copy">request</text>
+  </g>
+  <g transform="translate(326 204)">
+    <circle cx="22" cy="22" r="22" fill="#0e7490" fill-opacity=".28" stroke="#67e8f9"/>
+    <path d="M12 17h20M12 23h12M12 29h16M17 12v4M27 12v4" fill="none" stroke="#a5f3fc" stroke-width="2" stroke-linecap="round"/>
+    <text x="0" y="62" class="num">02</text>
+    <text x="0" y="91" class="step">Requirement</text><text x="0" y="112" class="step">Extraction</text>
+    <text x="0" y="145" class="copy">AI-assisted parsing</text>
+  </g>
+  <g transform="translate(580 204)">
+    <circle cx="22" cy="22" r="22" fill="#0e7490" fill-opacity=".28" stroke="#67e8f9"/>
+    <path d="M13 12h18v22H13z M17 17h10M17 22h10M17 27h7" fill="none" stroke="#a5f3fc" stroke-width="2" stroke-linejoin="round"/>
+    <text x="0" y="62" class="num">03</text>
+    <text x="0" y="91" class="step">Structured RFQ</text>
+    <text x="0" y="145" class="copy">Typed fields and</text><text x="0" y="163" class="copy">normalized data</text>
+  </g>
+  <g transform="translate(834 204)">
+    <circle cx="22" cy="22" r="22" fill="#0e7490" fill-opacity=".28" stroke="#67e8f9"/>
+    <path d="M22 11v13l8 5M22 35a13 13 0 1 0 0-26 13 13 0 0 0 0 26z" fill="none" stroke="#a5f3fc" stroke-width="2" stroke-linecap="round"/>
+    <text x="0" y="62" class="num">04</text>
+    <text x="0" y="91" class="step">Missing Information</text><text x="0" y="112" class="step">Detection</text>
+    <text x="0" y="145" class="copy">Required-field checks</text>
+  </g>
+  <g transform="translate(1088 188)">
+    <circle cx="22" cy="22" r="22" fill="#cffafe" fill-opacity=".16" stroke="#a5f3fc"/>
+    <path d="M14 29l5 5 11-13M14 16h18" fill="none" stroke="#ecfeff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="0" y="62" class="review-num">05</text>
+    <text x="0" y="91" class="review-step">Human Review</text>
+    <text x="0" y="126" class="review-copy">Confirm, correct,</text><text x="0" y="144" class="review-copy">approve</text>
+    <rect x="0" y="166" width="135" height="24" rx="12" fill="#cffafe" fill-opacity=".13"/>
+    <text x="67" y="182" text-anchor="middle" class="review-copy" font-size="11">HUMAN-IN-THE-LOOP</text>
+  </g>
+  <g transform="translate(1342 204)">
+    <circle cx="22" cy="22" r="22" fill="#166534" fill-opacity=".35" stroke="#86efac"/>
+    <path d="M12 16h20v16H12z M16 12h12v4H16z M16 22h12M16 27h8" fill="none" stroke="#bbf7d0" stroke-width="2" stroke-linejoin="round"/>
+    <text x="0" y="62" class="num">06</text>
+    <text x="0" y="91" class="step">Engineering / Sales</text><text x="0" y="112" class="step">Handoff</text>
+    <text x="0" y="145" class="copy">Review-ready RFQ</text>
+  </g>
+
+  <path d="M72 456H1528" stroke="#334155"/>
+  <circle cx="72" cy="456" r="4" fill="#67e8f9"/><circle cx="1528" cy="456" r="4" fill="#86efac"/>
+  <text x="72" y="485" class="copy">AI interprets the request.</text>
+  <text x="1528" y="485" text-anchor="end" class="copy">People make the final call.</text>
+</svg>
