@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({
         success: false,
         demo: false,
-        error: 'Live AI extraction is unavailable because no AI provider is configured. Load the built-in sample RFQ to preview the workflow, or configure live extraction before processing customer text.',
+        error: 'Live AI extraction is unavailable because no AI provider is configured. No extraction occurred for this request. Load the predefined synthetic sample to preview the workflow, or configure live extraction before processing customer text.',
       }, { status: 503 })
     }
     
