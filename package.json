@@ -1,13 +1,15 @@
 {
-  "name": "my-project",
+  "name": "manufacturing-rfq-assistant",
   "version": "0.1.0",
   "private": true,
+  "description": "Human-in-the-loop manufacturing RFQ intake, validation, review, and handoff demo.",
   "packageManager": "pnpm@12.3.4",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "vitest run"
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",
